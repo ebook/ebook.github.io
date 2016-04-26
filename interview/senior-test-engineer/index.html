@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>工作空间设置</title>
+    <title>senior test engineer </title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="">
-    <link rel="canonical" href="http://www.netkiller.cn/ebook/workspace.html">
+    <link rel="canonical" href="http://www.netkiller.cn/interview/senior-test-engineer/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -79,181 +79,72 @@
       <div class="post">
 
   <header class="post-header">
-    <h1>工作空间设置</h1>
-    <p class="meta">Jan 28, 2016</p>
+    <h1>senior test engineer </h1>
+    <p class="meta">Mar 3, 2016</p>
   </header>
 
   <article class="post-content">
-  <h1 id="section">工作空间设置</h1>
+  <h2 id="section">高级测试工程师</h2>
 
-<h2 id="section-1">写作环境</h2>
-<p>我喜欢使用Linux作文文档make环境，但编辑文档时通过samba 连接到linux 系统，使用Eclipse 写 XML文档。 安装 Ubuntu 操作系统</p>
+<h3 id="section-1">压力测试</h3>
 
-<pre><code>$ sudo apt-get install docbook-xsl
-$ sudo apt-get install xsltproc xmlto
-$ sudo apt-get install make
-$ sudo apt-get install git
-</code></pre>
+<ol>
+  <li>压力测试注意事项有哪些？</li>
+</ol>
 
-<h1 id="section-2">测试</h1>
+<h3 id="section-2">自动化测试</h3>
 
-<h2 id="bookxml">book.xml</h2>
+<ol>
+  <li>怎样解决图片验证吗输入的问题</li>
+  <li>怎会解决手机验证码输入问题</li>
+</ol>
 
-<pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;!DOCTYPE subject SYSTEM "/usr/share/xml/docbook/schema/dtd/4.5/docbookx.dtd"&gt;
-&lt;book&gt;
-	&lt;bookinfo&gt;
-		&lt;title&gt;An Example Book&lt;/title&gt;
+<h3 id="section-3">注入测试</h3>
 
-		&lt;author&gt;
-			&lt;firstname&gt;Your first name&lt;/firstname&gt;
-			&lt;surname&gt;Your surname&lt;/surname&gt;
-			&lt;affiliation&gt;
-				&lt;address&gt;
-					&lt;email&gt;foo@example.com&lt;/email&gt;
-				&lt;/address&gt;
-			&lt;/affiliation&gt;
-		&lt;/author&gt;
+<ol>
+  <li>POST 注入测试</li>
+  <li>GET 注入测试</li>
+  <li>SQL 注入测试</li>
+  <li>TCP 注入测试</li>
+</ol>
 
-		&lt;copyright&gt;
-			&lt;year&gt;2000&lt;/year&gt;
-			&lt;holder&gt;Copyright string here&lt;/holder&gt;
-		&lt;/copyright&gt;
+<h3 id="section-4">数据库测试</h3>
 
-		&lt;abstract&gt;
-			&lt;para&gt;If your book has an abstract then it should go here.&lt;/para&gt;
-		&lt;/abstract&gt;
-	&lt;/bookinfo&gt;
-
-	&lt;preface&gt;
-		&lt;title&gt;Preface&lt;/title&gt;
-
-		&lt;para&gt;Your book may have a preface, in which case it should be placed
-			here.&lt;/para&gt;
-	&lt;/preface&gt;
-
-	&lt;chapter&gt;
-		&lt;title&gt;My first chapter&lt;/title&gt;
-
-		&lt;para&gt;This is the first chapter in my book.&lt;/para&gt;
-
-		&lt;section&gt;
-			&lt;title&gt;My first section&lt;/title&gt;
-
-			&lt;para&gt;This is the first section in my book.&lt;/para&gt;
-		&lt;/section&gt;
-
-	&lt;/chapter&gt;
-&lt;/book&gt;
-</code></pre>
-
-<h2 id="html-">生成 html 文档</h2>
-
-<pre><code>% xsltproc /usr/local/share/xsl/docbook/xhtml/docbook.xsl book.xml &gt; book.html
-Note: namesp. cut : stripped namespace before processing           An Example Book
-Note: namesp. cut : processing stripped document                   An Example Book
-</code></pre>
-
-<p>在浏览器中查看book.html是否生成正确</p>
+<ol>
+  <li>数据库结构测试</li>
+  <li>存储过程测试</li>
+  <li>函数测试</li>
+  <li>防撰改测试</li>
+</ol>
 
 <hr />
 
-<h1 id="workspace-">工作空间 workspace 设置</h1>
+<h2 id="section-5">情景模拟</h2>
 
-<pre><code>mkdir -p workspace
-cd workspace
-</code></pre>
+<p><img src="images/testing/Pyramid.png" alt="Alt text" /></p>
 
-<h2 id="html">HTML文档输出目录</h2>
+<h3 id="web-">Web 服务器压力测试</h3>
 
-<pre><code>mkdir ~/public_html
-</code></pre>
+<p>需求：开发人员已经完成开发工作，现在需要对他的代码做一次压力测试
+问题：你将怎样做这次压力测试？请描述出工作中的重点。
+你现在有一个空的测试服务器，没有安装操作系统，这是起点。</p>
 
-<h2 id="section-3">公共文件</h2>
+<h3 id="ajax-">Ajax 测试</h3>
 
-<pre><code>git clone https://github.com/freebook/common.git
-git clone https://github.com/freebook/docbook-xsl.git
-</code></pre>
+<h3 id="get-">GET 请求测试</h3>
 
-<h2 id="section-4">项目文件</h2>
-<p>选择一个你感兴趣的项目，并使用git clone克隆一份代码，你也可以在github Fork 一份</p>
+<h3 id="post-">POST 提交测试</h3>
 
-<pre><code>git clone https://github.com/freebook/Architect.git
-git clone https://github.com/freebook/FreeBSD.git
-git clone https://github.com/freebook/Linux.git
-git clone https://github.com/freebook/CentOS.git 
-git clone https://github.com/freebook/Cryptography.git
-git clone https://github.com/freebook/Multimedia.git
-git clone https://github.com/freebook/Cisco.git
-git clone https://github.com/freebook/H3C.git
-git clone https://github.com/freebook/Network.git
+<h3 id="restfull">Restfull</h3>
 
-git clone https://github.com/freebook/PHP.git
-git clone https://github.com/freebook/Python.git
-git clone https://github.com/freebook/Perl.git
-git clone https://github.com/freebook/Developer.git
-git clone https://github.com/freebook/Testing.git
-git clone https://github.com/freebook/Docbook.git
-git clone https://github.com/freebook/Version.git
-
-git clone https://github.com/freebook/Database.git    
-git clone https://github.com/freebook/PostgreSQL.git
-git clone https://github.com/freebook/MySQL.git 
-git clone https://github.com/freebook/OpenLDAP.git 
-</code></pre>
-
-<h2 id="section-5">组织网站</h2>
-<pre><code>git clone https://github.com/freebook/freebook.github.io.git    
-</code></pre>
-
-<h2 id="html-1">建立HTML文档</h2>
-
-<pre><code>cd FreeBSD
-make
-</code></pre>
-
-<h2 id="html-2">输出HTML文档</h2>
-
-<pre><code>$ ls ~/public_html/freebsd/
-account.html            freebsd.upgrade.html       nginx.html                   system.html
-alias.html              gateway.html               nginx.http.html              system.network.html
-author.html             httpd.html                 nginx.proxy.html             system.start.html
-cache.html              ibook.epub                 nginx.worker_processes.html  system.terminal.html
-ch01s07.html            images                     ntpd.html                    user.profile.html
-ch04s02.html            index.html                 packages.html                www.html
-ch04s03.html            install.complete.html      passwd.html                  zfs.backup.html
-ch07s02.html            install.html               php-fpm.html                 zfs.basic.html
-ch07s03.html            install.network.html       php.memcache.html            zfs.device.html
-ch08s02.html            install.partitioning.html  pkgng.html                   zfs.export.html
-ch08s03.html            install.password.html      ports.devel.html             zfs.fs.html
-curl.html               install.timezone.html      ports.textproc.html          zfs.get.html
-database.html           ipaddr.html                preface.download.html        zfs.html
-debug.html              lighttpd.html              preface.html                 zfs.io.html
-dns.html                lighttpd.php5.html         reader.html                  zfs.mount.html
-docbook.css             lighttpd.xcache.html       route.html                   zfs.sharing.html
-donations.html          lighttpd.zend.html         rsync.html                   zfs.snapshot.html
-editors.html            logrotate.html             saver.html                   zfs.status.html
-faq.html                logs.html                  shell.html                   zfs.vol.html
-filesystem.html         mysql.html                 snmp.html                    zfs.zpool.html
-filesystem.winfs.html   netstart.html              su.html                      zsh.html
-filesystem。winfs.html  network.html               su.sorry.html
-freebsd.init.html       network.manager.html       sysinstall.html
-freebsd.ports.html      nginx.events.html          system.date.html
-</code></pre>
-
-<h2 id="section-6">定期更新</h2>
-<pre><code>for project in $(ls -1 .)
-do 
-
-	cd $project
-	pwd
-	git pull
-	cd -
-done 
-</code></pre>
 
   </article>
 
+	<section>
+		<author>作者</author>
+		<span>[netkiller]: http://www.netkiller.cn</span>
+	</section>
+  
 </div>
       </div>
     </div>

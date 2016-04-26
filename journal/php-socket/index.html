@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Release</title>
+    <title>PHP Socket 服务器端开发</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="">
-    <link rel="canonical" href="http://www.netkiller.cn/ebook/release.html">
+    <link rel="canonical" href="http://www.netkiller.cn/journal/php-socket/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -79,30 +79,25 @@
       <div class="post">
 
   <header class="post-header">
-    <h1>Release</h1>
-    <p class="meta">Jan 28, 2016</p>
+    <h1>PHP Socket 服务器端开发</h1>
+    <p class="meta">Mar 2, 2016</p>
   </header>
 
   <article class="post-content">
-  <h1 id="release">Release</h1>
+  <h2 id="io">阻塞I/O模式</h2>
 
-<h2 id="yum">YUM</h2>
+<p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory - edit this post and re-build (or run with the <code class="highlighter-rouge">-w</code> switch) to see your changes!
+To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention: YYYY-MM-DD-name-of-post.ext.</p>
 
-<pre><code>yum -y install createrepo
-mkdir -p pub/{5,6}/{i386,x86_64}
-createrepo -p -d -o pub/6/i386 pub/centos/6/i386
+<p>Jekyll also offers powerful support for code snippets:</p>
 
-cat &gt; /etc/yum.repos.d/netkiller.repo &lt;&lt;EOF
-[netkiller]
-name=Netkiller Free Books
-baseurl=http://www.example.com/pub/$releasever/$basearch/
-enabled=1
-gpgcheck=0
-gpgkey=
-EOF
+<figure class="highlight"><pre><code class="language-php" data-lang="php">def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=&gt; prints 'Hi, Tom' to STDOUT.</code></pre></figure>
 
-yum repolist 
-</code></pre>
+<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>.</p>
 
 
   </article>

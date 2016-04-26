@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>senior test engineer </title>
+    <title>Ubuntu</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="">
-    <link rel="canonical" href="http://www.netkiller.cn/interview/senior-test-engineer.html">
+    <link rel="canonical" href="http://www.netkiller.cn/ebook/ubuntu/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -79,70 +79,83 @@
       <div class="post">
 
   <header class="post-header">
-    <h1>senior test engineer </h1>
-    <p class="meta">Mar 3, 2016</p>
+    <h1>Ubuntu</h1>
+    <p class="meta">Jan 28, 2016</p>
   </header>
 
   <article class="post-content">
-  <h2 id="section">高级测试工程师</h2>
+  <h1 id="ubuntu-">Ubuntu 环境安装</h1>
 
-<h3 id="section-1">压力测试</h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>$ sudo apt-get install docbook-xsl
+$ sudo apt-get install xsltproc xmlto
+$ sudo apt-get install make
+$ sudo apt-get install git
+</code></pre>
+</div>
 
-<ol>
-  <li>压力测试注意事项有哪些？</li>
-</ol>
+<h1 id="section">测试</h1>
 
-<h3 id="section-2">自动化测试</h3>
+<h2 id="bookxml">book.xml</h2>
 
-<ol>
-  <li>怎样解决图片验证吗输入的问题</li>
-  <li>怎会解决手机验证码输入问题</li>
-</ol>
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="cp">&lt;!DOCTYPE subject SYSTEM "/usr/share/xml/docbook/schema/dtd/4.5/docbookx.dtd"&gt;</span>
+<span class="nt">&lt;book&gt;</span>
+	<span class="nt">&lt;bookinfo&gt;</span>
+		<span class="nt">&lt;title&gt;</span>An Example Book<span class="nt">&lt;/title&gt;</span>
 
-<h3 id="section-3">注入测试</h3>
+		<span class="nt">&lt;author&gt;</span>
+			<span class="nt">&lt;firstname&gt;</span>Your first name<span class="nt">&lt;/firstname&gt;</span>
+			<span class="nt">&lt;surname&gt;</span>Your surname<span class="nt">&lt;/surname&gt;</span>
+			<span class="nt">&lt;affiliation&gt;</span>
+				<span class="nt">&lt;address&gt;</span>
+					<span class="nt">&lt;email&gt;</span>foo@example.com<span class="nt">&lt;/email&gt;</span>
+				<span class="nt">&lt;/address&gt;</span>
+			<span class="nt">&lt;/affiliation&gt;</span>
+		<span class="nt">&lt;/author&gt;</span>
 
-<ol>
-  <li>POST 注入测试</li>
-  <li>GET 注入测试</li>
-  <li>SQL 注入测试</li>
-  <li>TCP 注入测试</li>
-</ol>
+		<span class="nt">&lt;copyright&gt;</span>
+			<span class="nt">&lt;year&gt;</span>2000<span class="nt">&lt;/year&gt;</span>
+			<span class="nt">&lt;holder&gt;</span>Copyright string here<span class="nt">&lt;/holder&gt;</span>
+		<span class="nt">&lt;/copyright&gt;</span>
 
-<h3 id="section-4">数据库测试</h3>
+		<span class="nt">&lt;abstract&gt;</span>
+			<span class="nt">&lt;para&gt;</span>If your book has an abstract then it should go here.<span class="nt">&lt;/para&gt;</span>
+		<span class="nt">&lt;/abstract&gt;</span>
+	<span class="nt">&lt;/bookinfo&gt;</span>
 
-<ol>
-  <li>数据库结构测试</li>
-  <li>存储过程测试</li>
-  <li>函数测试</li>
-  <li>防撰改测试</li>
-</ol>
+	<span class="nt">&lt;preface&gt;</span>
+		<span class="nt">&lt;title&gt;</span>Preface<span class="nt">&lt;/title&gt;</span>
 
-<hr />
+		<span class="nt">&lt;para&gt;</span>Your book may have a preface, in which case it should be placed
+			here.<span class="nt">&lt;/para&gt;</span>
+	<span class="nt">&lt;/preface&gt;</span>
 
-<h2 id="section-5">情景模拟</h2>
+	<span class="nt">&lt;chapter&gt;</span>
+		<span class="nt">&lt;title&gt;</span>My first chapter<span class="nt">&lt;/title&gt;</span>
 
-<h3 id="web-">Web 服务器压力测试</h3>
+		<span class="nt">&lt;para&gt;</span>This is the first chapter in my book.<span class="nt">&lt;/para&gt;</span>
 
-<p>需求：开发人员已经完成开发工作，现在需要对他的代码做一次压力测试
-问题：你将怎样做这次压力测试？请描述出工作中的重点。
-你现在有一个空的测试服务器，没有安装操作系统，这是起点。</p>
+		<span class="nt">&lt;section&gt;</span>
+			<span class="nt">&lt;title&gt;</span>My first section<span class="nt">&lt;/title&gt;</span>
 
-<h3 id="ajax-">Ajax 测试</h3>
+			<span class="nt">&lt;para&gt;</span>This is the first section in my book.<span class="nt">&lt;/para&gt;</span>
+		<span class="nt">&lt;/section&gt;</span>
 
-<h3 id="get-">GET 请求测试</h3>
+	<span class="nt">&lt;/chapter&gt;</span>
+<span class="nt">&lt;/book&gt;</span>
+</code></pre>
+</div>
 
-<h3 id="post-">POST 提交测试</h3>
+<h2 id="html-">生成 html 文档</h2>
 
-<h3 id="restfull">Restfull</h3>
-
+<div class="highlighter-rouge"><pre class="highlight"><code>% xsltproc /usr/local/share/xsl/docbook/xhtml/docbook.xsl book.xml &gt; book.html
+Note: namesp. cut : stripped namespace before processing           An Example Book
+Note: namesp. cut : processing stripped document                   An Example Book
+</code></pre>
+</div>
 
   </article>
 
-	<section>
-		<author>作者</author>
-		<span>[netkiller]: http://www.netkiller.cn</span>
-	</section>
-  
 </div>
       </div>
     </div>
