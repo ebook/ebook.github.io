@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>项目管理中工时计算的问题</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="">
+    <link rel="canonical" href="http://www.netkiller.cn/miscellaneous/%E7%AE%A1%E7%90%86/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E4%B8%AD%E5%B7%A5%E6%97%B6%E8%AE%A1%E7%AE%97%E7%9A%84%E9%97%AE%E9%A2%98/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+
+</head>
+
+
+    <body>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70023214-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<header class="site-header">
+
+  <div class="wrap">
+
+    <a class="site-title" href="/">Netkiller 电子书</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           viewBox="0 0 18 15" enable-background="new 0 0 18 15" xml:space="preserve">
+          <path fill="#505050" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0
+            h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#505050" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484
+            h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#505050" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0
+            c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      <div class="trigger">
+        
+          <a class="page-link" href="/about/">About</a>
+        
+          <a class="page-link" href="/car/">Auto Car</a>
+        
+          <a class="page-link" href="/download/">Download</a>
+        
+          <a class="page-link" href="/ebook/">ebook</a>
+        
+          
+        
+          
+        
+          <a class="page-link" href="/interview/">Interview</a>
+        
+          <a class="page-link" href="/journal/">Journal</a>
+        
+          <a class="page-link" href="/miscellaneous/">Miscellaneous</a>
+        
+          <a class="page-link" href="/home/project.html">Project</a>
+        
+          <a class="page-link" href="/service/">Service</a>
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrap">
+      <div class="post">
+
+  <header class="post-header">
+    <h1>项目管理中工时计算的问题</h1>
+    <p class="meta">May 9, 2016</p>
+  </header>
+
+  <article class="post-content">
+  <h1 id="section">项目管理中工时计算的问题</h1>
+
+<h2 id="section-1">背景</h2>
+<ol>
+  <li>为什么项目总是不能按时结项？</li>
+  <li>为什么工期一再延误？</li>
+  <li>员工不够努力吗？</li>
+  <li>时间去了哪里？</li>
+</ol>
+
+<h2 id="section-2">面临的问题</h2>
+<p>普遍问题是，我们至今对知识型工作者的做事效率，仍采用工业时代的评价模式。若工作者每小时的效率产出基本一致，那关注他们的工作时长便行之有理。
+对于重复性劳动，这种评价模式可能确实管用，但对知识型工作者就不太适用。</p>
+
+<h2 id="section-3">工时去了哪里？</h2>
+
+<p>据统计一个典型的美国办公室工作者，每个工作日只能完成90分钟真正有意义的工作。</p>
+
+<p>当天剩余的大部分时间，都被浪费在各种分心事务上，比如阅读新闻、网上冲浪、同事社交、吃零食、喝咖啡、翻看报纸、处理无关邮件、不必要的拖延行为、玩游戏、做白日梦等。
+多说一句，美国办公室工作者在世界范围内还算最高效的人群。在其他很多国家，人们每天完成的实质工作甚至更少。</p>
+
+<h3 id="section-4">洗手间，茶水间，吸烟</h3>
+<ul>
+  <li>洗手间，先不分男女性别差异以及大小号，平均下来10~15分钟一次没有意见吧？那么一天至少两次吧？</li>
+  <li>茶水间，洗杯子，泡茶，清理茶叶残渣，遇到同时还需要寒暄几句。需要10分钟吧？ 一天至少2~4次吧？</li>
+  <li>吸烟，我不吸烟不太清楚，但是看到公司的烟友抽的爽，了得欢。20 分钟要吧？</li>
+</ul>
+
+<h3 id="section-5">看邮件，写邮件</h3>
+<p>我最讨厌邮件群发，或将不相关的邮件也CC给我。阅读这些不相关的邮件是非常浪费时间的，你不清楚那封邮件中会与你有关，只能逐一阅读。
+写邮件更浪费时间，给领导写邮件浪费时间乘以二，既要要注意措辞，还要注意语气。
+阅读邮件至少需要30分钟时间，写邮件需要1个小时</p>
+
+<h3 id="section-6">沟通</h3>
+<p>很多企业组织架构层级导致沟通不顺畅，增加沟通成本，工时内耗。企业应该为员工提供开放的沟通，而不是层层转达。</p>
+
+<h3 id="section-7">查资料</h3>
+<p>查资料并没有浪费工时，磨刀不误砍柴工。但资料查了，问题没有解决工时就被消耗了。</p>
+
+<h3 id="section-8">无关的会议</h3>
+<p>中国是开会就是你一句我一句出主意，大都无法落实。很多无关会议把你拉去旁听。一般会议时间都在2个小时左右。</p>
+
+<h3 id="section-9">不必要的拖延行为</h3>
+<p>员工拖延时间有很多原因，不一定都是员工的问题，多是企业的问题造成的，所以企业自身要找原因，不要归罪为员工问题。</p>
+
+<h3 id="section-10">私人时间</h3>
+<ul>
+  <li>看手机短信，接听乱七八糟的电话（买保险的，贷款的，卖房的，头自理财的，诈骗的）</li>
+  <li>微信，朋友圈</li>
+  <li>看新闻，玩游戏</li>
+</ul>
+
+<p>以上仅仅粗略列出几项影响工时的因素，但实际过程中远不止这些，会有更多因素会占用工时。</p>
+
+<h2 id="section-11">怎样改善面临的问题</h2>
+<p>死扣工时的时代已经过去了，我们应该更多关注员工产出成果。</p>
+
+<p>欧美企业尽可能的为员工提供最好的工作，弹性工作时间甚至可以SOHO办公，不是让员工享受，而是让员工最大化产出。</p>
+
+<p>目标管理，价值管理都胜过时间管理。</p>
+
+<p>我认为项目管理应该改叫项目服务，项目服务能更描述项目人员的角色。</p>
+
+<p>员工每天真正投入工作的时间越长，产出就越多，做有真正有意义的工作才是王道。</p>
+
+<h2 id="section-12">怎样计算项目工时？</h2>
+<p>项目管理中通常是采用8小时/每天，一周40小时来计算工时。</p>
+
+<p>项目延期主要问题就是工时计算不合理，项目工时不能与8小时工作制挂钩。</p>
+
+<p>8小时工作制，仅仅是规定员工在8小时之内要工作岗位上。</p>
+
+<p>员工不是机器人，不可能8小时内，一刻不停的工作。</p>
+
+<p>所以减去上洗手间，茶水间，吸烟，处理工作邮件，回复工作即时消息，开无用的会议等等时间，员工剩下多少真正有意义的工作时间？</p>
+
+<p>所以我认为保守计算，项目工时应该按6小时计算甚至4小时。</p>
+
+<h2 id="section-13">作者</h2>
+<p>陈景峰，昵称 Netkiller, 英文名 Neo 《Netkiller 系列 手札》电子书的作者，读者QQ群：128659835，个人网站：http://netkiller.github.io/</p>
+
+<p>转载请注明出处与作者声明</p>
+
+<p>2015-8-12</p>
+
+
+  </article>
+
+  	<section>
+		<author>作者</author>
+		<span>[netkiller]: http://www.netkiller.cn</span>
+	</section>
+  
+</div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrap">
+<!--
+    <h2 class="footer-heading">Netkiller 电子书</h2>
+-->
+    <div class="footer-col-1 column">
+      <ul>
+        <li>Netkiller 电子书</li>
+        <li><a href="mailto:netkiller@msn.com">netkiller@msn.com</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col-2 column">
+      <ul>
+        <li>
+          <a href="https://github.com/netkiller">
+            <span class="icon github">
+              <svg version="1.1" class="github-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                <path fill-rule="evenodd" clip-rule="evenodd" fill="#C2C2C2" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761
+                c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32
+                c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472
+                c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037
+                C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65
+                c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261
+                c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082
+                c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129
+                c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+              </svg>
+            </span>
+            <span class="username">netkiller</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/netkiller@msn.com">
+            <span class="icon twitter">
+              <svg version="1.1" class="twitter-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                <path fill="#C2C2C2" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27
+                c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767
+                c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206
+                C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271
+                c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469
+                c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+              </svg>
+            </span>
+            <span class="username">netkiller@msn.com</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-col-3 column">
+      <p class="text"></p>
+	  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+    </div>
+
+  </div>
+
+</footer>
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F997cd4a7320a82d72cb74d179118f697' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript" src="/js/q.js"></script>
+
+
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+
+            //if(document.domain == 'netkiller.github.com'){
+            var disqus_shortname = 'netkiller'; // required: replace example with your forum shortname
+            //}else{
+			//var disqus_shortname = 'neochan';
+            //}
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?u=r5HG&d=9mi5r_kkDC8uxG8HuY3p4-2qgeeVypAK9vMD-2P6BYM"></script>
+
+
+    </body>
+</html>
